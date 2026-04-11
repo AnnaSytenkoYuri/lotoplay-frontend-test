@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гурт Грим та Грім</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">G&G</div>
+        <nav>
+          <a href="#">Про гурт</a>
+          <a href="#">Концерти</a>
+          <a href="#">Галерея</a>
+          <a href="#">Контакти</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="overlay">
+        <h1>Гурт «Грим та Грім»</h1>
+        <p>Справжній український рок, який гуркоче в серці.</p>
+        <p>
+          «Грим та Грім» - це поєднання <span>потужних</span> гітарних рифів, чесних текстів
+          і вибухової енергії сцени. Ми граємо для тих, хто цінує живий звук,
+          свободу та <br> силу музики.
+        </p>
+        <p><span>Наші концерти</span>- це завжди контакт з залом, драйв і емоції. Приєднуйся до нас на найближчих виступах і відчуй цей саунд наживо!</p>
+        <button class="btn open-popup">Замовити квиток</button>
+      </div>
+    </section>
+
+  <section class="concerts">
+  <h2 class="table-title">Найближчі концерти</h2>
+  <table class="concert-table">
+    <thead>
+      <tr>
+        <th>Місто / Заклад</th>
+        <th>К-сть місць</th>
+        <th>Дата і час</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Київ — Docker-G Pub</td>
+        <td>250</td>
+        <td>25.10.2025, 19:00</td>
+        <td><button class="buy-btn open-popup">Замовити квиток</button></td>
+      </tr>
+
+      <tr>
+        <td>Львів — !FESTrepublic</td>
+        <td>400</td>
+        <td>01.11.2025, 20:00</td>
+        <td><button class="buy-btn open-popup">Замовити квиток</button></td>
+      </tr>
+
+      <tr>
+        <td>Одеса — Зелений театр</td>
+        <td>700</td>
+        <td>09.11.2025, 19:30</td>
+        <td><button class="buy-btn open-popup">Замовити квиток</button></td>
+      </tr>
+
+      <tr>
+        <td>Харків — ArtZavod</td>
+        <td>500</td>
+        <td>16.11.2025, 19:00</td>
+        <td><button class="buy-btn open-popup">Замовити квиток</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <section class="members">
+    <h2>Учасники гурту</h2>
+  
+    <div class="members-grid">
+      
+      <div class="member-card">
+        <img src="assets/images/member1.jpg" alt="Максим">
+        <p>Максим — гітара</p>
+      </div>
+  
+      <div class="member-card">
+        <img src="assets/images/member2.jpg" alt="Олена">
+        <p>Олена — вокал</p>
+      </div>
+  
+      <div class="member-card">
+        <img src="assets/images/member3.jpg" alt="Тарас">
+        <p>Тарас — барабани</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="history-container">
+    <div class="history-content">
+  
+      <div class="history-text">
+        <h2>Наша історія</h2>
+        <p>
+            «Грим та Грім» народився з бажання створювати музику, яка відчувається серцем. Ми почали свій шлях у маленькій студії в центрі Києва, де кожен акорд, кожне слово було наповнене смоціями та переживаннями. Це було місце, де народжувались наші перші пісні, де ми вчились грати разом як единий організм.
+        </p>
+        <p>
+            За роки нашої діяльності ми виступили на десятках сцен, від невеликих клубів до великих фестивалів. Наша музика - це поєднання традиційного року з сучасними елементами, що робить - унікальною та впізнаваною. Ми не боімось експериментувати з звуком, додаючи електронні елементи збо народні інструменти.
+        </p>
+        <p>
+            Кожен наш виступ - це не просто концерт, а справжня подія, де ми ділимося своєю енергісю з глядачами та створюємо неповторну атмосферу. Ми віримо, що музика має силу обʼєднувати людей, створювати спільноти та надихати на зміни.
+        </p>
+        <p>
+            Наш колектив складається з досвідчених музикантів, кожен з яких привносить свій унісальний стиль та бачення. Максим створює неймовірні гітарні рифи, Олена зачаровує своїм вокалом, а Тарас тримає ритм, який змушує серця битися в унісон з музикою.
+        </p>
+      </div>
+  
+      <div class="history-image">
+        <img src="assets/images/concert.jpg" alt="concert">
+      </div>
+  
+    </div>
+</div>
+  </section>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>Дякуємо! Ми зв'яжемося з вами.</p>
+        <button id="closePopup">Закрити</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
