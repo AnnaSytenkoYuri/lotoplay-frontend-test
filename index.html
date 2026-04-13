@@ -11,10 +11,10 @@
       <div class="container">
         <div class="logo">G&G</div>
         <nav>
-          <a href="#">Про гурт</a>
-          <a href="#">Концерти</a>
-          <a href="#">Галерея</a>
-          <a href="#">Контакти</a>
+          <a href="#history">Про гурт</a>
+          <a href="#concerts">Концерти</a>
+          <a href="#members">Галерея</a>
+          <a href="#footer">Контакти</a>
         </nav>
       </div>
     </header>
@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <section class="concerts">
+    <section id="concerts" class="concerts">
       <h2 class="table-title">Найближчі концерти</h2>
       <table class="concert-table">
         <thead>
@@ -81,28 +81,28 @@
       </table>
     </section>
 
-    <section class="members">
+    <section id="members" class="members">
       <h2>Учасники гурту</h2>
 
       <div class="members-grid">
         <div class="member-card">
-          <img src="assets/images/member1.jpg" alt="Максим" />
+          <img src="assets/images/member1.jpg" alt="Максим" loading="lazy" />
           <p>Максим — гітара</p>
         </div>
 
         <div class="member-card">
-          <img src="assets/images/member2.jpg" alt="Олена" />
+          <img src="assets/images/member2.jpg" alt="Олена" loading="lazy" />
           <p>Олена — вокал</p>
         </div>
 
         <div class="member-card">
-          <img src="assets/images/member3.jpg" alt="Тарас" />
+          <img src="assets/images/member3.jpg" alt="Тарас" loading="lazy" />
           <p>Тарас — барабани</p>
         </div>
       </div>
     </section>
 
-    <section class="history">
+    <section id="history" class="history">
       <div class="history-container">
         <h2 class="history-title">Наша історія</h2>
 
@@ -125,7 +125,7 @@
           </div>
 
           <div class="history-image">
-            <img src="assets/images/concert.jpg" alt="concert" />
+            <img src="assets/images/concert.jpg" alt="concert" loading="lazy" />
           </div>
         </div>
 
@@ -145,6 +145,68 @@
         </div>
       </div>
     </section>
+    <section class="contact-us">
+      <div class="contact-container">
+        <h2 class="form-title">Зв'яжіться з нами</h2>
+        <p class="form-text">Хочеш замовити виступ або маєш питання? Пиши!</p>
+        <div class="context-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" required />
+              </div>
+
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+            </div>
+            <textarea
+              id="message"
+              placeholder="Розкажи про свої ідеї..."
+              required
+            ></textarea>
+            <button class="submit-btn" type="submit">Відправити</button>
+          </form>
+
+          <div class="map">
+            <h3 class="map-title">Наше місцезнаходження</h3>
+
+            <iframe
+              class="map-iframe"
+              src="https://www.google.com/maps?q=Kyiv&output=embed"
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <p class="copyright">
+            © 2025 Гурт «Грим та Грім». Всі права захищені.
+          </p>
+
+          <div class="contacts">
+            <p>booking@lotoplay.ua</p>
+            <span class="dot">•</span>
+            <p>+38 (099) 123-45-67</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <span class="dot">•</span>
+          <a href="#">YouTube</a>
+          <span class="dot">•</span>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- POPUP -->
     <div class="popup" id="popup">
@@ -154,6 +216,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
